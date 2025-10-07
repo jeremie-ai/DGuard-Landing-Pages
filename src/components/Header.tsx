@@ -51,7 +51,6 @@ export const Header: React.FC<HeaderProps> = ({ showBackArrow = false }) => {
             onClick={() => navigate('/')}
             className="flex items-center space-x-3 hover:opacity-80 transition-opacity"
           >
-            <img src="/telefonica.jpg" alt="Telefónica" className="h-20 w-20 object-contain" />
             <span className="text-xl font-bold text-foreground">DGuard</span>
           </button>
 

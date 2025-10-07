@@ -286,13 +286,6 @@ export function HomePage() {
               DGuard provides comprehensive security across all aspects of your online presence, 
               from financial transactions to personal data protection.
             </p>
-            <div className="flex justify-center h-25">
-              <img 
-                src="/telefonica.jpg" 
-                alt="Telefónica" 
-                className="h-12 w-auto object-contain"
-              />
-            </div>
           </motion.div>
 
           <div className="space-y-20">
@@ -603,13 +596,6 @@ export function HomePage() {
                 Start now for FREE
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-            </div>
-            <div className="flex justify-center mt-16">
-              <img 
-                src="/logos/logo-telefonica-seguros_white.svg" 
-                alt="Telefónica Seguros" 
-                className="h-12 w-auto object-contain"
-              />
             </div>
           </motion.div>
         </div>

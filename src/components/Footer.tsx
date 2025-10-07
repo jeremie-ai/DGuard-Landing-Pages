@@ -12,7 +12,6 @@ export const Footer: React.FC = () => {
           <div className="space-y-4">
             <div className="space-y-2">
               <span className="text-xl font-bold text-foreground">DGuard</span>
-              <img src="/telefonica.jpg" alt="Telefónica" className="w-20 h-auto object-contain" />
             </div>
             <p className="text-muted-foreground">
               Your digital bodyguard. Comprehensive protection for your digital life.

@@ -252,13 +252,6 @@ export default function PaymentProtectionPage() {
                   Start Free Trial
                 </Button>
               </div>
-              <div className="flex justify-start mt-8 lg:mt-20">
-                <img 
-                  src="/logos/logo-telefonica-seguros_white.svg" 
-                  alt="Telefónica Seguros" 
-                  className="h-12 w-auto object-contain"
-                />
-              </div>
             </motion.div>
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
