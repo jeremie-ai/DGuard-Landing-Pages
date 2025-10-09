@@ -2,17 +2,14 @@ import React, { useState, useEffect } from 'react'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { motion, useScroll, useTransform } from 'framer-motion'
 import { Button } from './ui/button'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 
-interface HeaderProps {
-  showBackArrow?: boolean
-}
-
-export const Header: React.FC<HeaderProps> = ({ showBackArrow = false }) => {
+export const Header: React.FC = () => {
   const navigate = useNavigate()
   const location = useLocation()
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isBusinessDropdownOpen, setIsBusinessDropdownOpen] = useState(false)
   
   const { scrollY } = useScroll()
   const backgroundColor = useTransform(
@@ -28,13 +25,6 @@ export const Header: React.FC<HeaderProps> = ({ showBackArrow = false }) => {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
-
-  const scrollToFirstH2 = () => {
-    const firstH2 = document.querySelector('h2')
-    if (firstH2) {
-      firstH2.scrollIntoView({ behavior: 'smooth' })
-    }
-  }
 
   return (
     <>
@@ -89,6 +79,54 @@ export const Header: React.FC<HeaderProps> = ({ showBackArrow = false }) => {
             >
               Phishing Protection
             </Button>
+            
+            {/* Business Solutions Dropdown */}
+            <div className="relative">
+              <Button
+                variant="ghost"
+                onClick={() => setIsBusinessDropdownOpen(!isBusinessDropdownOpen)}
+                className={`flex items-center space-x-1 ${
+                  location.pathname.startsWith('/business-solutions') 
+                    ? 'text-primary font-semibold' 
+                    : 'text-foreground hover:text-primary'
+                }`}
+              >
+                <span>Business Solutions</span>
+                <ChevronDown className={`h-4 w-4 transition-transform ${isBusinessDropdownOpen ? 'rotate-180' : ''}`} />
+              </Button>
+              
+              {isBusinessDropdownOpen && (
+                <div className="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-border py-2 z-50">
+                  <button
+                    onClick={() => {
+                      navigate('/business-solutions/white-label')
+                      setIsBusinessDropdownOpen(false)
+                    }}
+                    className={`w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors ${
+                      location.pathname === '/business-solutions/white-label' 
+                        ? 'text-primary font-semibold' 
+                        : 'text-foreground'
+                    }`}
+                  >
+                    White Label
+                  </button>
+                  <button
+                    onClick={() => {
+                      navigate('/business-solutions/sdk')
+                      setIsBusinessDropdownOpen(false)
+                    }}
+                    className={`w-full text-left px-4 py-2 hover:bg-gray-100 transition-colors ${
+                      location.pathname === '/business-solutions/sdk' 
+                        ? 'text-primary font-semibold' 
+                        : 'text-foreground'
+                    }`}
+                  >
+                    SDK
+                  </button>
+                </div>
+              )}
+            </div>
+
             <Button
               variant="outline"
               onClick={() => navigate('/auth?mode=signin')}
@@ -184,6 +222,57 @@ export const Header: React.FC<HeaderProps> = ({ showBackArrow = false }) => {
                           >
                             Phishing Protection
                           </Button>
+                          
+                          {/* Business Solutions Mobile Section */}
+                          <div className="space-y-1">
+                            <Button
+                              variant="ghost"
+                              onClick={() => setIsBusinessDropdownOpen(!isBusinessDropdownOpen)}
+                              className={`w-full justify-start flex items-center ${
+                                location.pathname.startsWith('/business-solutions') 
+                                  ? 'text-primary font-semibold' 
+                                  : 'text-foreground hover:text-primary'
+                              }`}
+                            >
+                              <span>Business Solutions</span>
+                              <ChevronDown className={`ml-1 h-4 w-4 transition-transform ${isBusinessDropdownOpen ? 'rotate-180' : ''}`} />
+                            </Button>
+                            
+                            {isBusinessDropdownOpen && (
+                              <div className="pl-4 space-y-1">
+                                <Button
+                                  variant="ghost"
+                                  onClick={() => {
+                                    navigate('/business-solutions/white-label')
+                                    setIsMobileMenuOpen(false)
+                                    setIsBusinessDropdownOpen(false)
+                                  }}
+                                  className={`w-full justify-start ${
+                                    location.pathname === '/business-solutions/white-label' 
+                                      ? 'text-primary font-semibold' 
+                                      : 'text-foreground hover:text-primary'
+                                  }`}
+                                >
+                                  White Label
+                                </Button>
+                                <Button
+                                  variant="ghost"
+                                  onClick={() => {
+                                    navigate('/business-solutions/sdk')
+                                    setIsMobileMenuOpen(false)
+                                    setIsBusinessDropdownOpen(false)
+                                  }}
+                                  className={`w-full justify-start ${
+                                    location.pathname === '/business-solutions/sdk' 
+                                      ? 'text-primary font-semibold' 
+                                      : 'text-foreground hover:text-primary'
+                                  }`}
+                                >
+                                  SDK
+                                </Button>
+                              </div>
+                            )}
+                          </div>
                           <motion.div 
                             className="pt-4 border-t border-border space-y-2 px-4"
                             initial={{ opacity: 0 }}
