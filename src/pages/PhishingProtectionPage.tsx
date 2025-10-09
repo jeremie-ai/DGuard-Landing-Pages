@@ -9,7 +9,7 @@ export default function PhishingProtectionPage() {
   const navigate = useNavigate()
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-purple-50 to-violet-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
       <Header />
 
       {/* Hero Section */}
@@ -30,7 +30,7 @@ export default function PhishingProtectionPage() {
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button 
                   size="lg" 
-                  className="text-lg px-8 py-4"
+                  className="text-lg px-8 py-4 font-semibold"
                   onClick={() => navigate('/auth?mode=signup')}
                 >
                   Start now for FREE
@@ -241,7 +241,7 @@ export default function PhishingProtectionPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-purple-600 via-purple-700 to-purple-900">
+      <section className="py-20 px-4 bg-gradient-to-br from-indigo-600 via-purple-700 to-purple-900">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <motion.div

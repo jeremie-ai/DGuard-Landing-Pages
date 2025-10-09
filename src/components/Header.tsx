@@ -10,6 +10,7 @@ export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isBusinessDropdownOpen, setIsBusinessDropdownOpen] = useState(false)
+  const dropdownTimeoutRef = React.useRef<number | null>(null)
   
   const { scrollY } = useScroll()
   const backgroundColor = useTransform(
@@ -23,8 +24,27 @@ export const Header: React.FC = () => {
       setIsScrolled(window.scrollY > 50)
     }
     window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+      if (dropdownTimeoutRef.current) {
+        clearTimeout(dropdownTimeoutRef.current)
+      }
+    }
   }, [])
+
+  const handleDropdownMouseEnter = () => {
+    if (dropdownTimeoutRef.current) {
+      clearTimeout(dropdownTimeoutRef.current)
+      dropdownTimeoutRef.current = null
+    }
+    setIsBusinessDropdownOpen(true)
+  }
+
+  const handleDropdownMouseLeave = () => {
+    dropdownTimeoutRef.current = setTimeout(() => {
+      setIsBusinessDropdownOpen(false)
+    }, 300) // 300ms delay before closing
+  }
 
   return (
     <>
@@ -81,10 +101,13 @@ export const Header: React.FC = () => {
             </Button>
             
             {/* Business Solutions Dropdown */}
-            <div className="relative">
+            <div 
+              className="relative"
+              onMouseEnter={handleDropdownMouseEnter}
+              onMouseLeave={handleDropdownMouseLeave}
+            >
               <Button
                 variant="ghost"
-                onClick={() => setIsBusinessDropdownOpen(!isBusinessDropdownOpen)}
                 className={`flex items-center space-x-1 ${
                   location.pathname.startsWith('/business-solutions') 
                     ? 'text-primary font-semibold' 
@@ -136,7 +159,7 @@ export const Header: React.FC = () => {
             </Button>
             <Button
               onClick={() => navigate('/auth?mode=signup')}
-              className="text-sm px-4 py-2"
+              className="text-sm px-4 py-2 font-semibold"
             >
               Get Started
             </Button>
@@ -294,7 +317,7 @@ export const Header: React.FC = () => {
                                 navigate('/auth?mode=signup')
                                 setIsMobileMenuOpen(false)
                               }}
-                              className="w-full text-lg px-8 py-3"
+                              className="w-full text-lg px-8 py-3 font-semibold"
                             >
                               Get Started
                             </Button>

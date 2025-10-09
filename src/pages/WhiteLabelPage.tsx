@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { Smartphone, Check, Settings, DollarSign, Zap, Globe, Shield, Star } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import { Button } from '@/components/ui/button'
+import { Button } from '../components/ui/button'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 
@@ -31,24 +31,12 @@ export default function WhiteLabelPage() {
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button 
                   size="lg" 
-                  className="text-lg px-8 py-4"
+                  className="text-lg px-8 py-4 font-semibold"
                   onClick={() => navigate('/auth?mode=signup')}
                 >
-                  Get Started
+                  Schedule a Demo
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="text-lg px-8 py-4"
-                  onClick={() => {
-                    const featuresSection = document.querySelector('h2');
-                    if (featuresSection) {
-                      featuresSection.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
-                >
-                  Learn More
-                </Button>
+
               </div>
               <div className="flex items-center space-x-6 text-sm text-muted-foreground">
                 <div className="flex items-center space-x-2">
@@ -148,7 +136,7 @@ export default function WhiteLabelPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                 <Smartphone className="h-6 w-6 text-blue-600" />
@@ -178,7 +166,7 @@ export default function WhiteLabelPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-8 border border-emerald-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-6">
                 <Settings className="h-6 w-6 text-emerald-600" />
@@ -212,7 +200,7 @@ export default function WhiteLabelPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-8 border border-purple-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                 <DollarSign className="h-6 w-6 text-purple-600" />
@@ -242,7 +230,7 @@ export default function WhiteLabelPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 border border-orange-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
                 <Zap className="h-6 w-6 text-orange-600" />
@@ -272,7 +260,7 @@ export default function WhiteLabelPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border border-cyan-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-6">
                 <Globe className="h-6 w-6 text-cyan-600" />
@@ -302,7 +290,7 @@ export default function WhiteLabelPage() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-8 border border-pink-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
                 <Shield className="h-6 w-6 text-pink-600" />
@@ -357,8 +345,8 @@ export default function WhiteLabelPage() {
               className="space-y-6"
             >
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-blue-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Faster Time to Market</h3>
@@ -370,8 +358,8 @@ export default function WhiteLabelPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-emerald-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Lower Development Costs</h3>
@@ -383,8 +371,8 @@ export default function WhiteLabelPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-purple-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Revenue Control</h3>
@@ -404,8 +392,8 @@ export default function WhiteLabelPage() {
               className="space-y-6"
             >
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-orange-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Brand Ownership</h3>
@@ -417,8 +405,8 @@ export default function WhiteLabelPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-cyan-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Continuous Innovation</h3>
@@ -430,8 +418,8 @@ export default function WhiteLabelPage() {
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-pink-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Enterprise Support</h3>
@@ -467,20 +455,7 @@ export default function WhiteLabelPage() {
               <Button size="lg" className="text-lg px-8 py-4 bg-white text-purple-900 hover:bg-gray-100 font-semibold">
                 Schedule a Demo
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="text-lg px-8 py-4 border-white text-white hover:bg-white/10"
-              >
-                View Pricing
-              </Button>
-            </div>
-            <div className="flex justify-center mt-12">
-              <img 
-                src="/logos/logo-white.svg" 
-                alt="DGuard" 
-                className="h-12 w-auto object-contain"
-              />
+
             </div>
           </motion.div>
         </div>

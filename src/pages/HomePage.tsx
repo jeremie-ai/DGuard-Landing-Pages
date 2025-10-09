@@ -168,7 +168,7 @@ export function HomePage() {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.8 }}
               >
-                <Button size="lg" onClick={() => navigate('/auth')} className="text-lg px-8 py-3">
+                <Button size="lg" onClick={() => navigate('/auth')} className="text-lg px-8 py-3 font-semibold">
                   Start Protecting Yourself
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
@@ -299,8 +299,8 @@ export function HomePage() {
             >
               <div className="space-y-6">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center">
-                    <CreditCard className="h-6 w-6 text-blue-600" />
+                  <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center">
+                    <CreditCard className="h-6 w-6 text-slate-600" />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground">Payment Monitoring & Fraud Alert</h3>
                 </div>
@@ -310,21 +310,21 @@ export function HomePage() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
-                    <Check className="h-5 w-5 text-emerald-500" />
+                    <Check className="h-5 w-5 text-slate-600" />
                     <span>Real-time transaction monitoring</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <Check className="h-5 w-5 text-emerald-500" />
+                    <Check className="h-5 w-5 text-slate-600" />
                     <span>Instant fraud alerts</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <Check className="h-5 w-5 text-emerald-500" />
+                    <Check className="h-5 w-5 text-slate-600" />
                     <span>Secure payment verification</span>
                   </li>
                 </ul>
                 <Button 
                   onClick={() => navigate('/payment-protection')}
-                  className="mt-6 bg-blue-600 hover:bg-blue-700 text-white"
+                  className="mt-6"
                 >
                   Learn More About Payment Protection
                 </Button>
@@ -372,8 +372,8 @@ export function HomePage() {
               </div>
               <div className="order-1 lg:order-2 space-y-6">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center">
-                    <User className="h-6 w-6 text-red-600" />
+                  <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center">
+                    <User className="h-6 w-6 text-slate-600" />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground">Identity Theft Protection</h3>
                 </div>
@@ -383,21 +383,21 @@ export function HomePage() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
-                    <Check className="h-5 w-5 text-emerald-500" />
+                    <Check className="h-5 w-5 text-slate-600" />
                     <span>24/7 dark web monitoring</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <Check className="h-5 w-5 text-emerald-500" />
+                    <Check className="h-5 w-5 text-slate-600" />
                     <span>Data breach alerts</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <Check className="h-5 w-5 text-emerald-500" />
+                    <Check className="h-5 w-5 text-slate-600" />
                     <span>VPN & password management</span>
                   </li>
                 </ul>
                 <Button 
                   onClick={() => navigate('/identity-protection')}
-                  className="mt-6 bg-red-600 hover:bg-red-700 text-white"
+                  className="mt-6"
                 >
                   Learn More About Identity Protection
                 </Button>
@@ -414,8 +414,8 @@ export function HomePage() {
             >
               <div className="space-y-6">
                 <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center">
-                    <Eye className="h-6 w-6 text-purple-600" />
+                  <div className="w-12 h-12 bg-slate-100 rounded-lg flex items-center justify-center">
+                    <Eye className="h-6 w-6 text-slate-600" />
                   </div>
                   <h3 className="text-2xl font-bold text-foreground">Phishing Protection</h3>
                 </div>
@@ -425,21 +425,21 @@ export function HomePage() {
                 </p>
                 <ul className="space-y-3">
                   <li className="flex items-center space-x-3">
-                    <Check className="h-5 w-5 text-emerald-500" />
+                    <Check className="h-5 w-5 text-slate-600" />
                     <span>Email & SMS scanning</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <Check className="h-5 w-5 text-emerald-500" />
+                    <Check className="h-5 w-5 text-slate-600" />
                     <span>URL threat detection</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                    <Check className="h-5 w-5 text-emerald-500" />
+                    <Check className="h-5 w-5 text-slate-600" />
                     <span>Real-time threat blocking</span>
                   </li>
                 </ul>
                 <Button 
                   onClick={() => navigate('/phishing-protection')}
-                  className="mt-6 bg-purple-600 hover:bg-purple-700 text-white"
+                  className="mt-6"
                 >
                   Learn More About Phishing Protection
                 </Button>
@@ -448,7 +448,7 @@ export function HomePage() {
                 <div className="space-y-4">
                   <div className="flex items-center justify-between">
                     <h4 className="font-semibold text-foreground">Threat Detection</h4>
-                    <span className="text-sm text-purple-600 font-medium">4 Blocked Today</span>
+                    <span className="text-sm text-primary font-medium">4 Blocked Today</span>
                   </div>
                   <div className="space-y-3">
                     <div className="p-3 bg-red-50 rounded-lg border border-red-200">
@@ -591,7 +591,7 @@ export function HomePage() {
                 size="lg" 
                 variant="secondary"
                 onClick={() => navigate('/auth')}
-                className="text-lg px-8 py-3"
+                className="text-lg px-8 py-3 font-semibold"
               >
                 Start now for FREE
                 <ArrowRight className="ml-2 h-5 w-5" />

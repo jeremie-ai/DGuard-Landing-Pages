@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import { Code, Check, Layers, Zap, Settings, Lock, Shield, Puzzle } from 'lucide-react'
+import { Code, Check, Layers, Zap, Settings, Shield, Puzzle } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import { Button } from '@/components/ui/button'
+import { Button } from '../components/ui/button'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 
@@ -9,7 +9,7 @@ export default function SDKPage() {
   const navigate = useNavigate()
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-teal-50 to-cyan-50">
+    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
       <Header />
 
       {/* Hero Section */}
@@ -31,24 +31,12 @@ export default function SDKPage() {
               <div className="flex flex-col sm:flex-row gap-4 mb-8">
                 <Button 
                   size="lg" 
-                  className="text-lg px-8 py-4"
+                  className="text-lg px-8 py-4 font-semibold"
                   onClick={() => navigate('/auth?mode=signup')}
                 >
                   Get API Keys
                 </Button>
-                <Button 
-                  variant="outline" 
-                  size="lg" 
-                  className="text-lg px-8 py-4"
-                  onClick={() => {
-                    const featuresSection = document.querySelector('h2');
-                    if (featuresSection) {
-                      featuresSection.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
-                >
-                  View Documentation
-                </Button>
+
               </div>
               <div className="flex items-center space-x-6 text-sm text-muted-foreground">
                 <div className="flex items-center space-x-2">
@@ -169,7 +157,7 @@ dguard.payments.monitor({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.1 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mb-6">
                 <Code className="h-6 w-6 text-blue-600" />
@@ -199,7 +187,7 @@ dguard.payments.monitor({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-emerald-50 to-green-50 rounded-2xl p-8 border border-emerald-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-emerald-100 rounded-lg flex items-center justify-center mb-6">
                 <Layers className="h-6 w-6 text-emerald-600" />
@@ -229,7 +217,7 @@ dguard.payments.monitor({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.3 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-purple-50 to-violet-50 rounded-2xl p-8 border border-purple-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mb-6">
                 <Settings className="h-6 w-6 text-purple-600" />
@@ -259,7 +247,7 @@ dguard.payments.monitor({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 border border-orange-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center mb-6">
                 <Zap className="h-6 w-6 text-orange-600" />
@@ -289,7 +277,7 @@ dguard.payments.monitor({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.5 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-cyan-50 to-blue-50 rounded-2xl p-8 border border-cyan-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-cyan-100 rounded-lg flex items-center justify-center mb-6">
                 <Puzzle className="h-6 w-6 text-cyan-600" />
@@ -319,7 +307,7 @@ dguard.payments.monitor({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.6 }}
               viewport={{ once: true }}
-              className="bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-8 border border-pink-200"
+              className="bg-white rounded-2xl p-8 border border-border shadow-sm hover:shadow-md transition-shadow"
             >
               <div className="w-12 h-12 bg-pink-100 rounded-lg flex items-center justify-center mb-6">
                 <Shield className="h-6 w-6 text-pink-600" />
@@ -374,8 +362,8 @@ dguard.payments.monitor({
               className="space-y-6"
             >
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-blue-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Seamless User Experience</h3>
@@ -387,8 +375,8 @@ dguard.payments.monitor({
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-emerald-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Frontend Control</h3>
@@ -400,8 +388,8 @@ dguard.payments.monitor({
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-purple-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Pay For What You Use</h3>
@@ -421,8 +409,8 @@ dguard.payments.monitor({
               className="space-y-6"
             >
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-orange-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Rapid Development</h3>
@@ -434,8 +422,8 @@ dguard.payments.monitor({
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-cyan-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Always Up to Date</h3>
@@ -447,8 +435,8 @@ dguard.payments.monitor({
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="w-10 h-10 bg-pink-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-                  <Check className="h-5 w-5 text-pink-600" />
+                <div className="w-10 h-10 bg-slate-100 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+                  <Check className="h-5 w-5 text-slate-600" />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold text-foreground mb-2">Developer-First Support</h3>
@@ -536,7 +524,7 @@ const urlSafe = await dguard.phishing.checkUrl(
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 px-4 bg-gradient-to-br from-teal-600 via-cyan-700 to-blue-900">
+      <section className="py-20 px-4 bg-gradient-to-br from-indigo-600 via-purple-700 to-purple-900">
         <div className="container mx-auto max-w-6xl">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -553,23 +541,10 @@ const urlSafe = await dguard.phishing.checkUrl(
               Get your API keys and start building today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-4 bg-white text-cyan-900 hover:bg-gray-100 font-semibold">
-                Get API Keys
+              <Button size="lg" className="text-lg px-8 py-4 bg-white text-purple-900 hover:bg-gray-100 font-semibold">
+                Reach out to get started
               </Button>
-              <Button 
-                size="lg" 
-                variant="outline" 
-                className="text-lg px-8 py-4 border-white text-white hover:bg-white/10"
-              >
-                Read Documentation
-              </Button>
-            </div>
-            <div className="flex justify-center mt-12">
-              <img 
-                src="/logos/logo-white.svg" 
-                alt="DGuard" 
-                className="h-12 w-auto object-contain"
-              />
+
             </div>
           </motion.div>
         </div>
