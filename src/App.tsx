@@ -5,10 +5,12 @@ import IdentityProtectionPage from './pages/IdentityProtectionPage'
 import PhishingProtectionPage from './pages/PhishingProtectionPage'
 import WhiteLabelPage from './pages/WhiteLabelPage'
 import SDKPage from './pages/SDKPage'
+import { ScrollToTop } from './components/ScrollToTop'
 
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/payment-protection" element={<PaymentProtectionPage />} />
