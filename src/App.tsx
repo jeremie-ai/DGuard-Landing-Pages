@@ -5,6 +5,7 @@ import IdentityProtectionPage from './pages/IdentityProtectionPage'
 import PhishingProtectionPage from './pages/PhishingProtectionPage'
 import WhiteLabelPage from './pages/WhiteLabelPage'
 import SDKPage from './pages/SDKPage'
+import AuthPage from './pages/AuthPage'
 import { ScrollToTop } from './components/ScrollToTop'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/phishing-protection" element={<PhishingProtectionPage />} />
         <Route path="/business-solutions/white-label" element={<WhiteLabelPage />} />
         <Route path="/business-solutions/sdk" element={<SDKPage />} />
+        <Route path="/auth" element={<AuthPage />} />
       </Routes>
     </Router>
   )
