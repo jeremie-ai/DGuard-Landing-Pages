@@ -1,31 +1,69 @@
-import { useState, useEffect } from 'react'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { 
   Shield, 
   CreditCard, 
   User, 
-  Wifi, 
-  Lock, 
   Eye, 
-  ChevronDown, 
   Star,
   ArrowRight,
   Check,
   Phone,
   Mail,
   Globe,
-  Users,
-  Zap,
-  Award,
-  Heart,
-  AlertCircle,
-  Home,
-  Euro
+  AlertCircle
 } from 'lucide-react'
-import { Button } from '@/components/ui/button'
+import { Button } from '../components/ui/button'
 import { useNavigate } from 'react-router-dom'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+
+function FloatingPaths({ position }: { position: number }) {
+  const paths = Array.from({ length: 36 }, (_, i) => ({
+    id: i,
+    d: `M-${380 - i * 5 * position} -${189 + i * 6}C-${
+      380 - i * 5 * position
+    } -${189 + i * 6} -${312 - i * 5 * position} ${216 - i * 6} ${
+      152 - i * 5 * position
+    } ${343 - i * 6}C${616 - i * 5 * position} ${470 - i * 6} ${
+      684 - i * 5 * position
+    } ${875 - i * 6} ${684 - i * 5 * position} ${875 - i * 6}`,
+    color: `rgba(15,23,42,${0.1 + i * 0.03})`,
+    width: 0.5 + i * 0.03,
+  }));
+
+  return (
+    <div className="absolute inset-0 pointer-events-none">
+      <svg
+        className="w-full h-full text-primary/20"
+        viewBox="0 0 696 316"
+        fill="none"
+        preserveAspectRatio="xMidYMid slice"
+      >
+        <title>Background Paths</title>
+        {paths.map((path) => (
+          <motion.path
+            key={path.id}
+            d={path.d}
+            stroke="currentColor"
+            strokeWidth={path.width}
+            strokeOpacity={0.15 + path.id * 0.015}
+            initial={{ pathLength: 0.3, opacity: 0.6 }}
+            animate={{
+              pathLength: 1,
+              opacity: [0.3, 0.6, 0.3],
+              pathOffset: [0, 1, 0],
+            }}
+            transition={{
+              duration: 20 + Math.random() * 10,
+              repeat: Number.POSITIVE_INFINITY,
+              ease: "linear",
+            }}
+          />
+        ))}
+      </svg>
+    </div>
+  );
+}
 
 interface Testimonial {
   id: string
@@ -133,7 +171,13 @@ export function HomePage() {
 
       {/* Hero Section */}
       <section className="relative pt-12 md:pt-20 pb-16 overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Animated Background Paths - Full Section */}
+        <div className="absolute inset-0 overflow-hidden">
+          <FloatingPaths position={1} />
+          <FloatingPaths position={-1} />
+        </div>
+        
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -206,7 +250,7 @@ export function HomePage() {
             >
               {/* Desktop: Show actual smartphone image */}
               <div className="hidden lg:block">
-                <div className="relative">
+                <div className="relative flex items-center justify-center">
                   <img 
                     src="/smartphone-dguard-dashboard.jpg" 
                     alt="DGuard mobile app dashboard showing welcome screen, security insights, and navigation"
@@ -270,7 +314,7 @@ export function HomePage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white">
+      <section className="relative py-20 bg-white shadow-[0_-10px_30px_-5px_rgba(0,0,0,0.1)] z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             className="text-center mb-16"
