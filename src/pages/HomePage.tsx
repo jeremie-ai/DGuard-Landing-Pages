@@ -170,7 +170,7 @@ export function HomePage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="relative pt-12 md:pt-20 pb-16 overflow-hidden">
+      <section className="relative pt-12 md:pt-20 pb-16 overflow-hidden min-h-[600px] lg:min-h-[700px]">
         {/* Animated Background Paths - Full Section */}
         <div className="absolute inset-0 overflow-hidden">
           <FloatingPaths position={1} />
@@ -250,11 +250,11 @@ export function HomePage() {
             >
               {/* Desktop: Show actual smartphone image */}
               <div className="hidden lg:block">
-                <div className="relative flex items-center justify-center">
+                <div className="relative flex items-center justify-center h-[600px]">
                   <img 
                     src="/smartphone-dguard-dashboard.jpg" 
                     alt="DGuard mobile app dashboard showing welcome screen, security insights, and navigation"
-                    className="w-80 h-auto mx-auto rounded-2xl"
+                    className="w-80 h-auto max-h-[600px] mx-auto rounded-2xl"
                   />
                 </div>
               </div>
@@ -407,11 +407,11 @@ export function HomePage() {
               transition={{ duration: 0.8 }}
               viewport={{ once: true }}
             >
-              <div className="order-2 lg:order-1 flex justify-center">
+              <div className="order-2 lg:order-1 flex justify-center items-center h-[600px]">
                 <img 
                   src="/smartphone-dguard-identity.jpg" 
                   alt="DGuard Identity Protection mobile app showing VPN, Password Manager, and data breaches"
-                  className="w-80 h-auto rounded-2xl"
+                  className="w-80 h-auto max-h-[600px] rounded-2xl"
                 />
               </div>
               <div className="order-1 lg:order-2 space-y-6">

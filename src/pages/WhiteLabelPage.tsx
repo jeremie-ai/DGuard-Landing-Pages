@@ -13,7 +13,7 @@ export default function WhiteLabelPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-12 md:pt-20 pb-16 px-4">
+      <section className="pt-12 md:pt-20 pb-16 px-4 min-h-[600px] lg:min-h-[700px]">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -60,11 +60,11 @@ export default function WhiteLabelPage() {
               className="relative"
             >
               <div className="hidden lg:block">
-                <div className="relative">
+                <div className="relative flex items-center justify-center h-[600px]">
                   <img 
                     src="/smartphone-dguard-dashboard.jpg" 
                     alt="DGuard white label mobile app on AppStore and Google Play"
-                    className="w-80 h-auto mx-auto rounded-2xl"
+                    className="w-80 h-auto max-h-[600px] mx-auto rounded-2xl"
                   />
                 </div>
               </div>

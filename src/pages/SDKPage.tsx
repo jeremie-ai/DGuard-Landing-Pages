@@ -13,7 +13,7 @@ export default function SDKPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-12 md:pt-20 pb-16 px-4">
+      <section className="pt-12 md:pt-20 pb-16 px-4 min-h-[600px] lg:min-h-[700px]">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div

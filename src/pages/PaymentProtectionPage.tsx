@@ -13,7 +13,7 @@ export default function PaymentProtectionPage() {
       <Header />
 
       {/* Hero Section */}
-      <section className="pt-12 md:pt-20 pb-16 px-4">
+      <section className="pt-12 md:pt-20 pb-16 px-4 min-h-[600px] lg:min-h-[700px]">
         <div className="container mx-auto max-w-6xl">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <motion.div
@@ -67,11 +67,11 @@ export default function PaymentProtectionPage() {
               className="relative"
             >
               <div className="hidden lg:block">
-                <div className="relative">
+                <div className="relative flex items-center justify-center h-[600px]">
                   <img 
                     src="/smartphone-dguard-payment-fraud2.jpg" 
                     alt="DGuard mobile app dashboard showing payment monitoring and fraud detection"
-                    className="w-80 h-auto mx-auto rounded-2xl"
+                    className="w-80 h-auto max-h-[600px] mx-auto rounded-2xl"
                   />
                 </div>
               </div>
@@ -262,12 +262,12 @@ export default function PaymentProtectionPage() {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
               viewport={{ once: true }}
-              className="flex justify-center lg:justify-end"
+              className="flex justify-center lg:justify-end items-center h-[600px]"
             >
               <img 
                 src="/smartphone-dguard-payment-fraud1.jpg" 
                 alt="DGuard mobile app showing payment fraud protection features"
-                className="w-80 h-auto rounded-2xl"
+                className="w-80 h-auto max-h-[600px] rounded-2xl"
               />
             </motion.div>
           </div>
