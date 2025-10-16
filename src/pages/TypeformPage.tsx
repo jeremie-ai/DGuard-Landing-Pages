@@ -5,14 +5,16 @@ import { Footer } from '../components/Footer'
 
 export default function TypeformPage() {
   useEffect(() => {
-    // Load Typeform embed script
+    // Load Calendly embed script
     const script = document.createElement('script')
-    script.src = '//embed.typeform.com/next/embed.js'
+    script.src = 'https://assets.calendly.com/assets/external/widget.js'
     script.async = true
     document.body.appendChild(script)
 
     return () => {
-      document.body.removeChild(script)
+      if (document.body.contains(script)) {
+        document.body.removeChild(script)
+      }
     }
   }, [])
 
@@ -28,10 +30,8 @@ export default function TypeformPage() {
             transition={{ duration: 0.8 }}
             className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-border"
           >
-            {/* Typeform embed container */}
-            <div className="w-full" style={{ minHeight: '700px' }}>
-              <div data-tf-live="01K7PGQ7H3RV6258BDKNXFK6MM"></div>
-            </div>
+            {/* Calendly inline widget */}
+            <div className="calendly-inline-widget" data-url="https://calendly.com/jeremie-sapira/dguard?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=3c19be" style={{ minWidth: '320px', height: '700px' }}></div>
           </motion.div>
         </div>
       </section>
