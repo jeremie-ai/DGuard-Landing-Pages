@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import { ArrowLeft, Shield, User, Lock, Eye, Check, Key, Database, AlertTriangle, MapPin } from 'lucide-react'
+import { User, Check, Key, Database, AlertTriangle, MapPin } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import { Button } from '@/components/ui/button'
+import { Button } from '../components/ui/button'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 
@@ -258,7 +258,11 @@ export default function IdentityProtectionPage() {
                 Join millions of users who trust DGuard to protect their digital identity and personal information.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="text-lg px-8 py-4 bg-white text-purple-900 hover:bg-gray-100 font-semibold">
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-4 bg-white text-purple-900 hover:bg-gray-100 font-semibold"
+                  onClick={() => navigate('/auth')}
+                >
                   Start Free Trial
                 </Button>
               </div>

@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
-import { ArrowLeft, Shield, CreditCard, AlertCircle, Check, TrendingUp, Lock, Eye, Zap } from 'lucide-react'
+import { Shield, CreditCard, AlertCircle, Check, Eye, Zap } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
-import { Button } from '@/components/ui/button'
+import { Button } from '../components/ui/button'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
 
@@ -248,7 +248,11 @@ export default function PaymentProtectionPage() {
                 Join thousands of users who trust DGuard to monitor their financial transactions and prevent fraud.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <Button size="lg" className="text-lg px-8 py-4 bg-white text-purple-900 hover:bg-gray-100 font-semibold">
+                <Button 
+                  size="lg" 
+                  className="text-lg px-8 py-4 bg-white text-purple-900 hover:bg-gray-100 font-semibold"
+                  onClick={() => navigate('/auth')}
+                >
                   Start Free Trial
                 </Button>
               </div>
