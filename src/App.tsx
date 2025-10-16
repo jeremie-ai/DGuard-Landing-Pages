@@ -6,6 +6,7 @@ import PhishingProtectionPage from './pages/PhishingProtectionPage'
 import WhiteLabelPage from './pages/WhiteLabelPage'
 import SDKPage from './pages/SDKPage'
 import AuthPage from './pages/AuthPage'
+import TypeformPage from './pages/TypeformPage'
 import { ScrollToTop } from './components/ScrollToTop'
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <Route path="/business-solutions/white-label" element={<WhiteLabelPage />} />
         <Route path="/business-solutions/sdk" element={<SDKPage />} />
         <Route path="/auth" element={<AuthPage />} />
+        <Route path="/auth/typeform" element={<TypeformPage />} />
       </Routes>
     </Router>
   )

@@ -32,7 +32,7 @@ export default function WhiteLabelPage() {
                 <Button 
                   size="lg" 
                   className="text-lg px-8 py-4 font-semibold"
-                  onClick={() => navigate('/auth?mode=signup')}
+                  onClick={() => navigate('/auth/typeform')}
                 >
                   Schedule a Demo
                 </Button>
@@ -452,7 +452,7 @@ export default function WhiteLabelPage() {
               Get started today and be in the app stores within weeks.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-4 bg-white text-purple-900 hover:bg-gray-100 font-semibold">
+              <Button size="lg" className="text-lg px-8 py-4 bg-white text-purple-900 hover:bg-gray-100 font-semibold" onClick={() => navigate('/auth/typeform')}>
                 Schedule a Demo
               </Button>
 

@@ -32,7 +32,7 @@ export default function SDKPage() {
                 <Button 
                   size="lg" 
                   className="text-lg px-8 py-4 font-semibold"
-                  onClick={() => navigate('/auth?mode=signup')}
+                  onClick={() => navigate('/auth/typeform')}
                 >
                   Get API Keys
                 </Button>
@@ -541,7 +541,7 @@ const urlSafe = await dguard.phishing.checkUrl(
               Get your API keys and start building today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="text-lg px-8 py-4 bg-white text-purple-900 hover:bg-gray-100 font-semibold">
+              <Button size="lg" className="text-lg px-8 py-4 bg-white text-purple-900 hover:bg-gray-100 font-semibold" onClick={() => navigate('/auth/typeform')}>
                 Reach out to get started
               </Button>
 
