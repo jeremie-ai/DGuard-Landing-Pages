@@ -31,7 +31,7 @@ export default function TypeformPage() {
             className="bg-white rounded-3xl overflow-hidden shadow-2xl border border-border"
           >
             {/* Calendly inline widget */}
-            <div className="calendly-inline-widget" data-url="https://calendly.com/jeremie-sapira/dguard?hide_event_type_details=1&hide_gdpr_banner=1&primary_color=3c19be" style={{ minWidth: '320px', height: '700px' }}></div>
+            <div className="calendly-inline-widget" data-url="https://calendly.com/jeremie-sapira/dguard?hide_gdpr_banner=1&primary_color=3c19be" style={{ minWidth: '320px', height: '700px' }}></div>
           </motion.div>
         </div>
       </section>
