@@ -20,20 +20,20 @@ export default function SDKPage() {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dguard.com/business-solutions/sdk" />
+        <meta property="og:url" content="https://dguard.ai/business-solutions/sdk" />
         <meta property="og:title" content="Security SDK for Developers | Integrate Protection APIs | DGuard" />
         <meta property="og:description" content="Integrate enterprise-grade security features into your app with DGuard SDK. Modular APIs with easy integration in minutes." />
         <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://dguard.com/business-solutions/sdk" />
+        <meta property="twitter:url" content="https://dguard.ai/business-solutions/sdk" />
         <meta property="twitter:title" content="Security SDK for Developers | Integrate Protection APIs | DGuard" />
         <meta property="twitter:description" content="Integrate enterprise-grade security features into your app with DGuard SDK. Modular APIs with easy integration in minutes." />
         <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Additional Meta Tags */}
-        <link rel="canonical" href="https://dguard.com/business-solutions/sdk" />
+        <link rel="canonical" href="https://dguard.ai/business-solutions/sdk" />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="author" content="DGuard" />

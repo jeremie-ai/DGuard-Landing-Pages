@@ -20,20 +20,20 @@ export default function WhiteLabelPage() {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dguard.com/business-solutions/white-label" />
+        <meta property="og:url" content="https://dguard.ai/business-solutions/white-label" />
         <meta property="og:title" content="White Label Security App | Launch Your Branded App | DGuard" />
         <meta property="og:description" content="Launch your own branded security app on iOS and Google Play. Fully customizable with modular features and flexible monetization." />
         <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://dguard.com/business-solutions/white-label" />
+        <meta property="twitter:url" content="https://dguard.ai/business-solutions/white-label" />
         <meta property="twitter:title" content="White Label Security App | Launch Your Branded App | DGuard" />
         <meta property="twitter:description" content="Launch your own branded security app on iOS and Google Play. Fully customizable with modular features and flexible monetization." />
         <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Additional Meta Tags */}
-        <link rel="canonical" href="https://dguard.com/business-solutions/white-label" />
+        <link rel="canonical" href="https://dguard.ai/business-solutions/white-label" />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="author" content="DGuard" />

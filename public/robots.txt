@@ -6,7 +6,7 @@ User-agent: *
 Allow: /
 
 # Sitemap location
-Sitemap: https://dguard.com/sitemap.xml
+Sitemap: https://dguard.ai/sitemap.xml
 
 # Crawl-delay (optional - helps prevent server overload)
 Crawl-delay: 0.5

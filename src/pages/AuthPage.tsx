@@ -33,20 +33,20 @@ export default function AuthPage() {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dguard.com/auth" />
+        <meta property="og:url" content="https://dguard.ai/auth" />
         <meta property="og:title" content="Join DGuard Waiting List | Early Access to Digital Protection" />
         <meta property="og:description" content="Be among the first to access DGuard's comprehensive digital protection. Join the waiting list for exclusive early access." />
         <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://dguard.com/auth" />
+        <meta property="twitter:url" content="https://dguard.ai/auth" />
         <meta property="twitter:title" content="Join DGuard Waiting List | Early Access to Digital Protection" />
         <meta property="twitter:description" content="Be among the first to access DGuard's comprehensive digital protection. Join the waiting list for exclusive early access." />
         <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Additional Meta Tags */}
-        <link rel="canonical" href="https://dguard.com/auth" />
+        <link rel="canonical" href="https://dguard.ai/auth" />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="author" content="DGuard" />

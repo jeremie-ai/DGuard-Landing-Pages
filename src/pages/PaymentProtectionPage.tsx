@@ -20,20 +20,20 @@ export default function PaymentProtectionPage() {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dguard.com/payment-protection" />
+        <meta property="og:url" content="https://dguard.ai/payment-protection" />
         <meta property="og:title" content="Payment Fraud Protection | Real-time Transaction Monitoring | DGuard" />
         <meta property="og:description" content="Protect your finances with AI-powered payment monitoring. Get instant alerts for suspicious transactions and prevent fraud before it happens." />
         <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://dguard.com/payment-protection" />
+        <meta property="twitter:url" content="https://dguard.ai/payment-protection" />
         <meta property="twitter:title" content="Payment Fraud Protection | Real-time Transaction Monitoring | DGuard" />
         <meta property="twitter:description" content="Protect your finances with AI-powered payment monitoring. Get instant alerts for suspicious transactions and prevent fraud before it happens." />
         <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Additional Meta Tags */}
-        <link rel="canonical" href="https://dguard.com/payment-protection" />
+        <link rel="canonical" href="https://dguard.ai/payment-protection" />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="author" content="DGuard" />

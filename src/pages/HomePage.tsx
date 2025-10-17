@@ -177,20 +177,20 @@ export function HomePage() {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dguard.com/" />
+        <meta property="og:url" content="https://dguard.ai/" />
         <meta property="og:title" content="DGuard - Your Digital Bodyguard | Complete Online Protection" />
         <meta property="og:description" content="Comprehensive protection for your digital life. Monitor payments, prevent identity theft, secure connections, and stay safe from phishing attacks." />
         <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://dguard.com/" />
+        <meta property="twitter:url" content="https://dguard.ai/" />
         <meta property="twitter:title" content="DGuard - Your Digital Bodyguard | Complete Online Protection" />
         <meta property="twitter:description" content="Comprehensive protection for your digital life. Monitor payments, prevent identity theft, secure connections, and stay safe from phishing attacks." />
         <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Additional Meta Tags */}
-        <link rel="canonical" href="https://dguard.com/" />
+        <link rel="canonical" href="https://dguard.ai/" />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="7 days" />
@@ -204,9 +204,9 @@ export function HomePage() {
             "@graph": [
               {
                 "@type": "Organization",
-                "@id": "https://dguard.com/#organization",
+                "@id": "https://dguard.ai/#organization",
                 "name": "DGuard",
-                "url": "https://dguard.com",
+                "url": "https://dguard.ai",
                 "logo": {
                   "@type": "ImageObject",
                   "url": "https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png"
@@ -219,11 +219,11 @@ export function HomePage() {
               },
               {
                 "@type": "WebSite",
-                "@id": "https://dguard.com/#website",
-                "url": "https://dguard.com",
+                "@id": "https://dguard.ai/#website",
+                "url": "https://dguard.ai",
                 "name": "DGuard",
                 "publisher": {
-                  "@id": "https://dguard.com/#organization"
+                  "@id": "https://dguard.ai/#organization"
                 }
               },
               {

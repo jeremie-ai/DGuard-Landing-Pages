@@ -20,20 +20,20 @@ export default function PhishingProtectionPage() {
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://dguard.com/phishing-protection" />
+        <meta property="og:url" content="https://dguard.ai/phishing-protection" />
         <meta property="og:title" content="Phishing Protection | Email & SMS Security | DGuard" />
         <meta property="og:description" content="Advanced phishing protection with real-time email, SMS, and URL scanning. Detect malicious links and block phishing attempts before they harm you." />
         <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://dguard.com/phishing-protection" />
+        <meta property="twitter:url" content="https://dguard.ai/phishing-protection" />
         <meta property="twitter:title" content="Phishing Protection | Email & SMS Security | DGuard" />
         <meta property="twitter:description" content="Advanced phishing protection with real-time email, SMS, and URL scanning. Detect malicious links and block phishing attempts before they harm you." />
         <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
         
         {/* Additional Meta Tags */}
-        <link rel="canonical" href="https://dguard.com/phishing-protection" />
+        <link rel="canonical" href="https://dguard.ai/phishing-protection" />
         <meta name="robots" content="index, follow" />
         <meta name="language" content="English" />
         <meta name="author" content="DGuard" />

@@ -6,7 +6,7 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://dguard.com/</loc>
+    <loc>https://dguard.ai/</loc>
     <lastmod>2025-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -14,7 +14,7 @@
   
   <!-- Payment Protection Page -->
   <url>
-    <loc>https://dguard.com/payment-protection</loc>
+    <loc>https://dguard.ai/payment-protection</loc>
     <lastmod>2025-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -22,7 +22,7 @@
   
   <!-- Identity Protection Page -->
   <url>
-    <loc>https://dguard.com/identity-protection</loc>
+    <loc>https://dguard.ai/identity-protection</loc>
     <lastmod>2025-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -30,7 +30,7 @@
   
   <!-- Phishing Protection Page -->
   <url>
-    <loc>https://dguard.com/phishing-protection</loc>
+    <loc>https://dguard.ai/phishing-protection</loc>
     <lastmod>2025-01-17</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
@@ -38,7 +38,7 @@
   
   <!-- White Label Business Solution -->
   <url>
-    <loc>https://dguard.com/business-solutions/white-label</loc>
+    <loc>https://dguard.ai/business-solutions/white-label</loc>
     <lastmod>2025-01-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -46,7 +46,7 @@
   
   <!-- SDK Business Solution -->
   <url>
-    <loc>https://dguard.com/business-solutions/sdk</loc>
+    <loc>https://dguard.ai/business-solutions/sdk</loc>
     <lastmod>2025-01-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -54,7 +54,7 @@
   
   <!-- Auth/Waiting List Page -->
   <url>
-    <loc>https://dguard.com/auth</loc>
+    <loc>https://dguard.ai/auth</loc>
     <lastmod>2025-01-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
@@ -62,7 +62,7 @@
   
   <!-- Demo/Contact Page -->
   <url>
-    <loc>https://dguard.com/auth/typeform</loc>
+    <loc>https://dguard.ai/auth/typeform</loc>
     <lastmod>2025-01-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
