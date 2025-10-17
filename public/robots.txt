@@ -1,0 +1,17 @@
+# DGuard Landing Pages - robots.txt
+# This file tells search engines which pages to crawl and index
+
+# Allow all search engines to crawl all pages
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://dguard.com/sitemap.xml
+
+# Crawl-delay (optional - helps prevent server overload)
+Crawl-delay: 0.5
+
+# If you want to block specific paths in the future, add them here:
+# Disallow: /admin/
+# Disallow: /private/
+

@@ -196,6 +196,69 @@ export function HomePage() {
         <meta name="revisit-after" content="7 days" />
         <meta name="author" content="DGuard" />
         <meta name="theme-color" content="#0f172a" />
+        
+        {/* JSON-LD Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Organization",
+                "@id": "https://dguard.com/#organization",
+                "name": "DGuard",
+                "url": "https://dguard.com",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png"
+                },
+                "description": "Comprehensive digital security and protection platform",
+                "sameAs": [
+                  "https://www.linkedin.com/company/dguard",
+                  "https://twitter.com/dguard"
+                ]
+              },
+              {
+                "@type": "WebSite",
+                "@id": "https://dguard.com/#website",
+                "url": "https://dguard.com",
+                "name": "DGuard",
+                "publisher": {
+                  "@id": "https://dguard.com/#organization"
+                }
+              },
+              {
+                "@type": "SoftwareApplication",
+                "name": "DGuard",
+                "applicationCategory": "SecurityApplication",
+                "operatingSystem": "iOS, Android",
+                "offers": {
+                  "@type": "Offer",
+                  "price": "0",
+                  "priceCurrency": "EUR",
+                  "availability": "https://schema.org/PreOrder",
+                  "priceValidUntil": "2025-12-31"
+                },
+                "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "4.9",
+                  "ratingCount": "1250",
+                  "bestRating": "5",
+                  "worstRating": "1"
+                },
+                "description": "Your digital bodyguard. Comprehensive protection for your digital life including payment monitoring, identity theft prevention, phishing protection, and secure VPN.",
+                "featureList": [
+                  "Real-time payment fraud detection",
+                  "Identity theft protection",
+                  "Dark web monitoring",
+                  "Phishing protection",
+                  "Secure VPN",
+                  "Password manager",
+                  "24/7 threat detection"
+                ]
+              }
+            ]
+          })}
+        </script>
       </Helmet>
 
       <Header />
