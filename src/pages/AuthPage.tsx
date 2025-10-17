@@ -4,6 +4,7 @@ import { Mail, CheckCircle, ArrowRight, Shield, Bell } from 'lucide-react'
 import { Button } from '../components/ui/button'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { Helmet } from 'react-helmet-async'
 
 export default function AuthPage() {
   const [email, setEmail] = useState('')
@@ -23,6 +24,35 @@ export default function AuthPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>Join DGuard Waiting List | Early Access to Digital Protection</title>
+        <meta name="title" content="Join DGuard Waiting List | Early Access to Digital Protection" />
+        <meta name="description" content="Be among the first to access DGuard's comprehensive digital protection. Join the waiting list for exclusive early access and special launch pricing." />
+        <meta name="keywords" content="DGuard waiting list, early access, digital security signup, cybersecurity early bird, protection app launch" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dguard.com/auth" />
+        <meta property="og:title" content="Join DGuard Waiting List | Early Access to Digital Protection" />
+        <meta property="og:description" content="Be among the first to access DGuard's comprehensive digital protection. Join the waiting list for exclusive early access." />
+        <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://dguard.com/auth" />
+        <meta property="twitter:title" content="Join DGuard Waiting List | Early Access to Digital Protection" />
+        <meta property="twitter:description" content="Be among the first to access DGuard's comprehensive digital protection. Join the waiting list for exclusive early access." />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Additional Meta Tags */}
+        <link rel="canonical" href="https://dguard.com/auth" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="author" content="DGuard" />
+        <meta name="theme-color" content="#0f172a" />
+      </Helmet>
+
       <Header />
 
       <section className="pt-32 pb-20 px-4">

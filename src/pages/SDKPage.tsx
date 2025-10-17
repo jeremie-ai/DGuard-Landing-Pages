@@ -4,12 +4,42 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from '../components/ui/button'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { Helmet } from 'react-helmet-async'
 
 export default function SDKPage() {
   const navigate = useNavigate()
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>Security SDK for Developers | Integrate Protection APIs | DGuard</title>
+        <meta name="title" content="Security SDK for Developers | Integrate Protection APIs | DGuard" />
+        <meta name="description" content="Integrate enterprise-grade security features into your app with DGuard SDK. Modular APIs for payment protection, identity theft prevention, and phishing detection. Easy integration in minutes." />
+        <meta name="keywords" content="security SDK, developer API, payment protection API, identity protection SDK, phishing detection API, security integration, headless security API" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dguard.com/business-solutions/sdk" />
+        <meta property="og:title" content="Security SDK for Developers | Integrate Protection APIs | DGuard" />
+        <meta property="og:description" content="Integrate enterprise-grade security features into your app with DGuard SDK. Modular APIs with easy integration in minutes." />
+        <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://dguard.com/business-solutions/sdk" />
+        <meta property="twitter:title" content="Security SDK for Developers | Integrate Protection APIs | DGuard" />
+        <meta property="twitter:description" content="Integrate enterprise-grade security features into your app with DGuard SDK. Modular APIs with easy integration in minutes." />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Additional Meta Tags */}
+        <link rel="canonical" href="https://dguard.com/business-solutions/sdk" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="author" content="DGuard" />
+        <meta name="theme-color" content="#0f172a" />
+      </Helmet>
+
       <Header />
 
       {/* Hero Section */}

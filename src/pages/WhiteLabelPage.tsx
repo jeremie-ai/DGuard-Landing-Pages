@@ -4,12 +4,42 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from '../components/ui/button'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { Helmet } from 'react-helmet-async'
 
 export default function WhiteLabelPage() {
   const navigate = useNavigate()
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>White Label Security App | Launch Your Branded App | DGuard</title>
+        <meta name="title" content="White Label Security App | Launch Your Branded App | DGuard" />
+        <meta name="description" content="Launch your own branded security app on iOS and Google Play. Fully customizable white label solution with modular features, flexible monetization, and rapid deployment in weeks." />
+        <meta name="keywords" content="white label security app, branded security app, customizable security solution, app store ready, modular security features, white label software" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dguard.com/business-solutions/white-label" />
+        <meta property="og:title" content="White Label Security App | Launch Your Branded App | DGuard" />
+        <meta property="og:description" content="Launch your own branded security app on iOS and Google Play. Fully customizable with modular features and flexible monetization." />
+        <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://dguard.com/business-solutions/white-label" />
+        <meta property="twitter:title" content="White Label Security App | Launch Your Branded App | DGuard" />
+        <meta property="twitter:description" content="Launch your own branded security app on iOS and Google Play. Fully customizable with modular features and flexible monetization." />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Additional Meta Tags */}
+        <link rel="canonical" href="https://dguard.com/business-solutions/white-label" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="author" content="DGuard" />
+        <meta name="theme-color" content="#0f172a" />
+      </Helmet>
+
       <Header />
 
       {/* Hero Section */}

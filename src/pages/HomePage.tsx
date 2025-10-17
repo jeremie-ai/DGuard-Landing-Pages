@@ -16,6 +16,7 @@ import { Button } from '../components/ui/button'
 import { useNavigate } from 'react-router-dom'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { Helmet } from 'react-helmet-async'
 
 function FloatingPaths({ position }: { position: number }) {
   const paths = Array.from({ length: 36 }, (_, i) => ({
@@ -167,6 +168,36 @@ export function HomePage() {
 
   return (
     <div className="min-h-screen bg-background">
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>DGuard - Your Digital Bodyguard | Complete Online Protection</title>
+        <meta name="title" content="DGuard - Your Digital Bodyguard | Complete Online Protection" />
+        <meta name="description" content="Comprehensive protection for your digital life. Monitor payments, prevent identity theft, secure connections, and stay safe from phishing attacks - all in one powerful app. Start your 14-day free trial." />
+        <meta name="keywords" content="digital security, payment protection, identity theft, phishing protection, VPN, cybersecurity, fraud detection, online safety" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dguard.com/" />
+        <meta property="og:title" content="DGuard - Your Digital Bodyguard | Complete Online Protection" />
+        <meta property="og:description" content="Comprehensive protection for your digital life. Monitor payments, prevent identity theft, secure connections, and stay safe from phishing attacks." />
+        <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://dguard.com/" />
+        <meta property="twitter:title" content="DGuard - Your Digital Bodyguard | Complete Online Protection" />
+        <meta property="twitter:description" content="Comprehensive protection for your digital life. Monitor payments, prevent identity theft, secure connections, and stay safe from phishing attacks." />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Additional Meta Tags */}
+        <link rel="canonical" href="https://dguard.com/" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="author" content="DGuard" />
+        <meta name="theme-color" content="#0f172a" />
+      </Helmet>
+
       <Header />
 
       {/* Hero Section */}

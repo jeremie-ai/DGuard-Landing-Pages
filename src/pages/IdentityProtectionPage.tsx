@@ -4,12 +4,42 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from '../components/ui/button'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { Helmet } from 'react-helmet-async'
 
 export default function IdentityProtectionPage() {
   const navigate = useNavigate()
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>Identity Theft Protection | Dark Web Monitoring & VPN | DGuard</title>
+        <meta name="title" content="Identity Theft Protection | Dark Web Monitoring & VPN | DGuard" />
+        <meta name="description" content="Comprehensive identity protection with VPN, password management, and 24/7 dark web monitoring. Detect data breaches instantly and protect your personal information from theft." />
+        <meta name="keywords" content="identity protection, identity theft, dark web monitoring, VPN, password manager, data breach alerts, personal information security, cyber protection" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dguard.com/identity-protection" />
+        <meta property="og:title" content="Identity Theft Protection | Dark Web Monitoring & VPN | DGuard" />
+        <meta property="og:description" content="Comprehensive identity protection with VPN, password management, and 24/7 dark web monitoring. Protect your personal information from theft." />
+        <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://dguard.com/identity-protection" />
+        <meta property="twitter:title" content="Identity Theft Protection | Dark Web Monitoring & VPN | DGuard" />
+        <meta property="twitter:description" content="Comprehensive identity protection with VPN, password management, and 24/7 dark web monitoring. Protect your personal information from theft." />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Additional Meta Tags */}
+        <link rel="canonical" href="https://dguard.com/identity-protection" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="author" content="DGuard" />
+        <meta name="theme-color" content="#0f172a" />
+      </Helmet>
+
       <Header />
 
       {/* Hero Section */}

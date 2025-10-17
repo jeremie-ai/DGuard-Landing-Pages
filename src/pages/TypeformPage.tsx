@@ -2,6 +2,7 @@ import { useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { Helmet } from 'react-helmet-async'
 
 export default function TypeformPage() {
   useEffect(() => {
@@ -20,6 +21,35 @@ export default function TypeformPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>Schedule a Demo | Talk to DGuard Team | DGuard</title>
+        <meta name="title" content="Schedule a Demo | Talk to DGuard Team | DGuard" />
+        <meta name="description" content="Schedule a personalized demo with the DGuard team. Learn how our security solutions can protect your business and users. Book a consultation today." />
+        <meta name="keywords" content="DGuard demo, schedule consultation, security demo, business solutions demo, talk to sales, book meeting" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dguard.com/auth/typeform" />
+        <meta property="og:title" content="Schedule a Demo | Talk to DGuard Team | DGuard" />
+        <meta property="og:description" content="Schedule a personalized demo with the DGuard team. Learn how our security solutions can protect your business and users." />
+        <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://dguard.com/auth/typeform" />
+        <meta property="twitter:title" content="Schedule a Demo | Talk to DGuard Team | DGuard" />
+        <meta property="twitter:description" content="Schedule a personalized demo with the DGuard team. Learn how our security solutions can protect your business and users." />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Additional Meta Tags */}
+        <link rel="canonical" href="https://dguard.com/auth/typeform" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="author" content="DGuard" />
+        <meta name="theme-color" content="#0f172a" />
+      </Helmet>
+
       <Header />
 
       <section className="pt-32 pb-20 px-4">

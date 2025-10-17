@@ -4,12 +4,42 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from '../components/ui/button'
 import { Header } from '../components/Header'
 import { Footer } from '../components/Footer'
+import { Helmet } from 'react-helmet-async'
 
 export default function PhishingProtectionPage() {
   const navigate = useNavigate()
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 via-indigo-50 to-purple-50">
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>Phishing Protection | Email & SMS Security | DGuard</title>
+        <meta name="title" content="Phishing Protection | Email & SMS Security | DGuard" />
+        <meta name="description" content="Advanced phishing protection with real-time email, SMS, and URL scanning. Detect malicious links, block phishing attempts, and stay safe from cyber attacks with AI-powered threat detection." />
+        <meta name="keywords" content="phishing protection, email security, SMS security, URL scanner, malicious link detection, cyber attack prevention, scam protection, phishing defense" />
+        
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://dguard.com/phishing-protection" />
+        <meta property="og:title" content="Phishing Protection | Email & SMS Security | DGuard" />
+        <meta property="og:description" content="Advanced phishing protection with real-time email, SMS, and URL scanning. Detect malicious links and block phishing attempts before they harm you." />
+        <meta property="og:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Twitter */}
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://dguard.com/phishing-protection" />
+        <meta property="twitter:title" content="Phishing Protection | Email & SMS Security | DGuard" />
+        <meta property="twitter:description" content="Advanced phishing protection with real-time email, SMS, and URL scanning. Detect malicious links and block phishing attempts before they harm you." />
+        <meta property="twitter:image" content="https://res.cloudinary.com/dfnxhd9vv/image/upload/v1760688800/dguard-favicon_jkvpzs_c_crop_w_280_vsg8gk.png" />
+        
+        {/* Additional Meta Tags */}
+        <link rel="canonical" href="https://dguard.com/phishing-protection" />
+        <meta name="robots" content="index, follow" />
+        <meta name="language" content="English" />
+        <meta name="author" content="DGuard" />
+        <meta name="theme-color" content="#0f172a" />
+      </Helmet>
+
       <Header />
 
       {/* Hero Section */}
